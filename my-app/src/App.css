@@ -1,0 +1,20 @@
+.outline {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 30px 300px;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.heading {
+  text-align: center;
+}
+
+.submit {
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+}
