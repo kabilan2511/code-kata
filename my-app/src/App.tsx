@@ -44,6 +44,8 @@ const App: React.FC = () => {
     console.log("Form data:", formData);
   };
 
+  const businessTypes = ["Retail", "Technology", "Hospitality", "Other"];
+
   return (
     <div className="loan-form">
       <h2 className="heading">Business Loan Application</h2>
@@ -102,6 +104,19 @@ const App: React.FC = () => {
             onChange={handleInputChange}
           />
         </label>
+        <label>
+          Select Service Provider:
+          <input
+            type="dropdown"
+            name="contactPhone"
+            value={formData.contactPhone}
+            onChange={handleInputChange}
+          />
+        </label>
+        <label htmlFor="cars">Choose a car:</label>
+        <select>
+          <option></option>
+        </select>
         <button className="submit" type="submit">
           Submit Application
         </button>
